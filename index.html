@@ -12,7 +12,7 @@
         }
         
         .bg-image {
-            background-image: url('Andromeda Galaxy.avif');
+            background-image: url('Adromeda Galaxy.avif');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -26,21 +26,21 @@
         }
         
         .login-form {
-            background: rgba(0, 0, 0, 0.5);
             padding: 20px;
-            border-radius: 10px;
         }
         
         .login-form input {
-            width: 100%;
+            width: 200px; /* Adjusted width for shorter fields */
             padding: 10px;
             margin: 5px 0;
-            border: none;
+            border: 1px solid #ccc;
             border-radius: 5px;
+            background: transparent; /* Removed gray background */
+            color: white; /* Text color to be visible on dark background */
         }
         
         .login-form button {
-            width: 100%;
+            width: 200px; /* Adjusted width to match input fields */
             padding: 10px;
             background-color: #009688;
             color: white;
@@ -64,9 +64,6 @@
         <div class="logo">NexusLS</div>
         <form class="login-form" action="/login" method="post">
             <input type="text" name="username" placeholder="Username" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <button type="submit">Login</button>
-        </form>
     </div>
 </body>
 </html>
